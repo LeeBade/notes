@@ -131,6 +131,11 @@ String s2 = new String(b, StandardCharsets.UTF_8);
 
 ### 类
 
+- 名称约定
+  - 除类名开头大写，其它一律开头小写；
+  - 方法名、注释、方法体、返回值保持一致性，注明方法功能；参数透露得到方法服务的约定；
+  - 相关性强的方法放在一起，方法名使用java和springboot的名称约定
+    - 动词必要，名词约束参数或返回值，名词非必要不写
 - 访问控制修饰Field、Method、Constructor
   - public：允许所有人访问
   - protected：仅允许同一个包中的类或子类访问
