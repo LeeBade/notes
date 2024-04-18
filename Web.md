@@ -5,6 +5,17 @@
 - `<div> `：块级容器
 - `<span>`：内联容器
 
+## 拖曳
+
+- 在 HTML 中，除了图像、链接和选择的文本默认的可拖拽行为之外，其他元素在默认情况下是不可拖拽的
+- 设置可拖曳
+
+```html
+
+<!-- 当用户开始拖拽时，会触发 dragstart 事件。 -->
+<p  draggable="true"
+    ondragstart="event.dataTransfer.setData('text/plain', 'This text may be dragged')"></p>
+```
 # CSS
 
 ## 选择器
@@ -13,7 +24,10 @@
 /* 在当前文档中选取id为idname的元素 */
 #idname
 ```
-# Js
+# Js Dom
+
+## 
+# Js Web
 
 ## 函数
 ### 参数 & 变量 & 方法
@@ -640,7 +654,19 @@ import HomeView from '../views/HomeView.vue'
 import('../views/AboutView.vue')
 ```
 
+## nvm
 
+nvm install latest 安装最新版本node.js
+nvm use 版本号 使用某一具体版本，例如 ：nvm use 14.3.0
+nvm list 列出当前已安装的所有版本
+nvm ls 列出当前已安装的所有版本
+nvm uninstall 版本号 卸载某一具体版本，例如：nvm use 14.3.0
+nvm ls-remote Mac版本中,列出全部可以安装的node版本
+nvm ls available windows版本,列出全部可以安装的node版本
+nvm current 显示当前的版本
+nvm alias 给不同的版本号添加别名
+nvm unalias 删除已定义的别名
+nvm reinstall-packages 在当前版本node环境下，重新全局安装指定版本号的npm包
 ## Element UI
 
 - 基于Vue框架的插件

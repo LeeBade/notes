@@ -315,7 +315,7 @@ WHERE condition;
  *因此该sql语句的含义是：工资至少比计算机部门其中一个教授高的教授集合
  */
 -- 关系名instructor，属性：name、department、salary
-select T.name
+select A.name
 from instructor as A , instructor as B 
 where A.salary > B.salary and B.department = 'computer';
 
@@ -390,6 +390,7 @@ WHERE age > ALL (SELECT age FROM other_students WHERE grade = 'A');
   - `where not exists(B except A)`检查B是否为A的子集
 
 ```sql
+
 
 SELECT customer_name
 FROM customers c
