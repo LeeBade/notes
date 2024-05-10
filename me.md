@@ -76,7 +76,7 @@ Active-Artemis
   - zdc060924.
 - EA
   - 602407929@qq.com
-  - Wqs99999
+  - Wqs99999.
 
 ## AI
 
